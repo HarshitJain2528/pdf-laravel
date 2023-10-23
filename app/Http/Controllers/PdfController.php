@@ -15,7 +15,7 @@ class PdfController extends Controller
         $data=Student::all();
         $pdf=new TCPDF();
         $pdf->AddPage();
-        $pdf->SetFont('dejavusans', '', 12);
+        $pdf->SetFont('dejavusans', '', 12);//optional
         // Add column headings
         $pdf->Cell(30, 10, 'Id', 1);
         $pdf->Cell(30, 10, 'First Name', 1);
